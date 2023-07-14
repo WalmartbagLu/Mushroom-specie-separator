@@ -1,12 +1,12 @@
 # Mushroom-specie-separator
 
-This project separates some of the common mushrooms into 9 species.
+This project separates some of the common mushrooms into 5 species.
 
 ![A picture of an Amanita (mushroom)](https://github.com/WalmartbagLu/Mushroom-specie-separator/assets/138505874/4a6f0f4e-938e-48e4-a06a-b5139bb22d0b)
 
 ## The Algorithm
 
-The project is a network based on jetson-nano and uses a resnet 18 model. The network is retrained with 9 datasets including 9 different species of mushrooms wich are Agaricus, Amanita, Boletus, Cortinarius, Entoloma, Hygrocybe, lactarius, Russula, Suillus. The final model is exported using ONNX format. When the model finished training the first epoch, the accuracy was about 11%. When the model was trained for 50 epochs, the accuracy reached 50%. Since the size of datasets were massive and their were 9 groups, it takes a long time for the model to increase its accuracy.
+The project is a network based on jetson-nano and uses a resnet 18 model. The network is retrained with 9 datasets including 9 different species of mushrooms wich are Agaricus, Boletus, Cortinarius, Entoloma,  Suillus. The final model is exported using ONNX format. When the model finished training the first epoch, the accuracy was about 11%. When the model was trained for 50 epochs, the accuracy reached 50%. Since the size of datasets were massive and their were 5 groups, it takes a long time for the model to increase its accuracy.
 
 jetson-nano is a computer designed to power entry-level edge AI applications and devices with a single tegra x1 GPU.
 ![A picture of jetson-nano](https://github.com/WalmartbagLu/Mushroom-specie-separator/assets/138505874/32851ff6-9252-4b41-a2a3-ec96c145d6bf)
@@ -22,13 +22,13 @@ Preparation
 4. Change directories into `jetson-inference/python/training/classification/data`.
 5. Create a directory named "mushroom".
 6. Inside the directory create a file name "labels.txt".
-7. Write the name of nine species into the file labels.txt. Each name should be in a different line and leave an empty line below.
+7. Write the name of the five species into the file labels.txt. Each name should be in a different line and leave an empty line below.
 8. Inside the directory "mushroom" create three directories named "train", "val", and "test".
-9. Create 9 directories named "Agaricus", "Amanita", "Boletus", "Cortinarius", "Entoloma", "Hygrocybe", "lactarius", "Russula", "Suillus" iside each of the three directories "train", "val", and "test".
+9. Create 5 directories named "Agaricus", "Boletus", "Cortinarius", "Entoloma", "Suillus" iside each of the three directories "train", "val", and "test".
 10. Put 5% of "Agaricus" images into the directory `val/Agaricus`.
 11. Put 5% of different "Agaricus" images into the directory `test/Agaricus`.
 12. Put the rest "Agaricus" images into the directory `train/Agaricus`
-13. Do the similar thing to the other 8 sets of images from step 8~10.
+13. Do the similar thing to the other 4 sets of images from step 8~10.
 14. Make a new directory called "mushroom" in `jetson-inference/python/training/classification/models`
 
 Execution
