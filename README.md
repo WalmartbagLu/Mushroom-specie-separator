@@ -6,7 +6,7 @@ This project separates some of the common mushrooms into 5 species.
 
 ## The Algorithm
 
-The project is a network based on jetson-nano and uses a resnet 18 model. The network is retrained with 9 datasets including 9 different species of mushrooms wich are Agaricus, Boletus, Cortinarius, Entoloma,  Suillus. The final model is exported using ONNX format. When the model finished training the first epoch, the accuracy was about 11%. When the model was trained for 50 epochs, the accuracy reached 50%. Since the size of datasets were massive and their were 5 groups, it takes a long time for the model to increase its accuracy.
+The project is a network based on jetson-nano and uses a resnet 18 model. The network is retrained with 5 datasets including 5 different species of mushrooms wich are Agaricus, Boletus, Cortinarius, Entoloma,  Suillus. The final model is exported using ONNX format. When the model finished training the first epoch, the accuracy was about 11%. When the model was trained for 50 epochs, the accuracy reached 50%. Since the size of datasets were massive and their were 5 groups, it takes a long time for the model to increase its accuracy.
 
 jetson-nano is a computer designed to power entry-level edge AI applications and devices with a single tegra x1 GPU.
 ![A picture of jetson-nano](https://github.com/WalmartbagLu/Mushroom-specie-separator/assets/138505874/32851ff6-9252-4b41-a2a3-ec96c145d6bf)
