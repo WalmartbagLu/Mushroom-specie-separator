@@ -42,3 +42,5 @@ Execution
 8. In the terminal type `NET=models/mushroom` and `DATASET=data/mushroom`.
 9. Then enter in `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/Agaricus/009_mrv34Sn4WiQ.jpg output.jpg` to test the model.
 10. look at your test result in the directory `classification`.
+
+Youtube video:https://youtu.be/R_0gEWmaAQk
